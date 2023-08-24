@@ -13,7 +13,9 @@ menu.addEventListener('click', () => {
       nav.classList.remove('open-nav')
    }
 })
-
+function menuBtnFunction(menuBtn) {
+  menuBtn.classList.toggle("active");
+}
 var Header = document.getElementById("Header")
         var menuu = document.getElementById("menuu")
 

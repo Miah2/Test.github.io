@@ -95,8 +95,8 @@ border-top: 2px solid #ff2317;
 li a:hover{
 color: #ff2317;
 }
-.menu-icon{
-display: none;
+.menu-btn-3{
+  display: none;
 }
 .lift{
 width: 80%;
@@ -520,10 +520,10 @@ align-items: center;
   border-bottom: 1px solid #030a28;
   border-radius: 0px;
   display: block;
-  transition: 0.6s;
+  transition: 0.5s;
   }
   ul li:hover{
-  transform: translateX(-10px);
+  transform: translateX(-5px);
   }
   ul li a{
   font-size: 16px;
@@ -531,27 +531,73 @@ align-items: center;
   display: block;
   padding: 20px 40px;
   }
-  /* .acctive{
-    border-top: transparent;
-  } */
-  .acctive{
-    background: lightcoral;
-    }
-  li .active{
-  color: inherit;
+  ul .acctive a{
+    text-shadow: 1px 1px #030a28;
+    color: #f8503a;
+    font-weight: 600;
   }
+
   ul li a:hover{
-  background: lightcoral;
   text-decoration: none;
-  color: white;
-  text-shadow: 1px 1px #b0ced3;
+  color: #f8503a;
+  text-shadow: 1px 1px #030a28;
   }
-  .menu-icon{
-  display: block;
-  cursor: pointer;
-  width: 40px;
-  border-radius: 10px;
-  }
+  .menu-btn-3 {
+    height: 32px;
+    width: 40px;
+    cursor: pointer;
+    display: block;
+}
+ 
+.menu-btn-3 span,
+.menu-btn-3 span::before,
+.menu-btn-3 span::after {
+    background: #f8503a; 
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 4px;         
+    margin-top: 13px;
+     
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(deg);
+    transform: rotate(180deg);
+
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+
+.menu-btn-3 span::before {
+    margin-top:-12px;
+}
+
+.menu-btn-3 span::after {
+    margin-top:12px;
+}
+
+.menu-btn-3.active span {
+    background: transparent;
+    
+}
+
+.menu-btn-3.active span::before {
+    margin-top: 0;
+    background: #030a28;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.menu-btn-3.active span::after {
+    transform: rotate(-45deg);
+    margin-top: 0;
+    background: #030a28;
+}
   .lift{
     height: 100px;
     }
