@@ -98,7 +98,7 @@ display: none;
 }
 .lift{
 width: 80%;
-height: 100px;
+height: 80px;
 background: transparent;
 margin: 0 auto;
 }
@@ -185,7 +185,7 @@ margin-bottom: 15px;
 }
 .col-grid p{
 font-size: 16px;
-opacity: 0.9;
+opacity: 0.8;
 }
 .col img{
 width: 45px;
@@ -489,7 +489,7 @@ align-items: center;
 }
 @media only screen and (max-width:1000px){
   header{
-    background: white;
+    background: transparent;
   }
   .wrapper{
     width: 90%;
@@ -551,7 +551,7 @@ align-items: center;
   border-radius: 10px;
   }
   .lift{
-    height: 150px;
+    height: 100px;
     }
   .open-nav{
     transform: translateX(0%);
