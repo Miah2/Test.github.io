@@ -115,7 +115,7 @@ margin:  auto ;
 padding-top: 100px;
 }
 .hero-text h1{
-font-size: 3.5rem;
+font-size: clamp(1rem, 2.5rem, 3.5rem);
 font-weight: 500;
 line-height: 1.1;
 }
@@ -185,6 +185,7 @@ margin-bottom: 15px;
 }
 .col-grid p{
 font-size: 16px;
+opacity: 0.9;
 }
 .col img{
 width: 45px;
@@ -528,9 +529,12 @@ align-items: center;
   display: block;
   padding: 20px 40px;
   }
-  .acctive{
+  /* .acctive{
     border-top: transparent;
-  }
+  } */
+  .acctive{
+    background: #ff2317;
+    }
   li .active{
   color: inherit;
   }
