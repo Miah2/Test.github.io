@@ -158,11 +158,14 @@ color: white;
 form .btn:hover{
 background: #030a28;
 }
-form .fa-magnifying-glass a{
-align-self: center;
-/* padding: 10px 20px; */
-color: gray;
-}
+form a{
+  align-self: center;
+  padding: 10px 20px;
+  }
+  form .fa-magnifying-glass{
+  align-self: center;
+  color: gray;
+  }
 .Universal{
 background: whitesmoke;
 }
@@ -629,17 +632,24 @@ footer{
   form button{
     display: none;
     }
-    form .fa-magnifying-glass{
-      padding: 15px 20px;
-      color: rgb(145, 139, 139);
+    form a{
+      height: 100%;
+      align-self: center;
+      padding: 10px 20px;
       background: #030a28;
+      }
+    form:hover a{
+      background: #f8503a;
+      }
+    form .fa-magnifying-glass{
+      color: rgb(145, 139, 139);
       }
 }
 Header.sticky{
 position: fixed;
 top: 0;
 background: white;
-/* box-shadow: 0 5px 5px #978f8f80; */
+box-shadow: 0 5px 5px #978f8f80;
 }
 #menuu.sticky ul li a{
 color: black;
