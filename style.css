@@ -639,7 +639,7 @@ Header.sticky{
 position: fixed;
 top: 0;
 background: white;
-box-shadow: 0 5px 5px #978f8f80;
+/* box-shadow: 0 5px 5px #978f8f80; */
 }
 #menuu.sticky ul li a{
 color: black;
